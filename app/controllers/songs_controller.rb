@@ -2,8 +2,13 @@ class SongsController < ApplicationController
 
 before_action :set_song, only: [:show, :edit, :update]
 
+  def current_artist
+   return unless session[:artist_id]
+      @current_artist ||= Artist.find(session[:artist_id])
+    end
+
   def  index
-    @songs = current_artist.songs
+    @songs = @current_artist.songs
   end
 
   def show
@@ -11,11 +16,11 @@ before_action :set_song, only: [:show, :edit, :update]
   end
 
   def new
-    @song = current_artist.songs.build
+    @song = @current_artist.songs.build
   end
 
   def create
-  @song = current_artist.songs.build(song_params)
+  @song = @current_artist.songs.build(song_params)
   end
 
 def edit
