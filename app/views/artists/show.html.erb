@@ -1,7 +1,19 @@
-<h1><%= @artist.name %></h1>
+<h1><%= "#{@artist.name}" " #{@artist.surname}" %></h1>
 
 
 <p> Style: <%= @artist.style %></p>
 <p> Country: <%= @artist.country %></p>
 <p> Description: <%= @artist.description %></p>
-<%= @artist.image_url %>
+<%= image_tag @artist.image_url %>
+
+<h4>Song list</h4>
+
+<% if @artist.songs.any? %>
+  <ul>
+    <% @artist.songs.each do |song| %>
+      <li><%= song.title %></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are no songs attached to this artist.</p>
+<% end %>

@@ -15,7 +15,7 @@ madsen = Artist.create!(
   Their music combines elements of pop, rock, indie and punk together with lyrics in German. They released their self-titled debut
   album in 2005 and reached No. 23 on the German music charts. In 2006, they released their second album, Goodbye Logik. Frieden im Krieg
   was released in 2008 and Labyrinth in 2010.",
-  image_url: "https://en.wikipedia.org/wiki/File:Madsen.jpg")
+  image_url: "https://cloudinary.com/console/media_library#/dialog/image/upload/Steve_Earle_at_the_City_Winery_Chicago_2015-02-03_23.07.07__16414924106_hceemv")
 
 steve_earl  = Artist.create!(
   name: "Steve",
@@ -27,7 +27,7 @@ steve_earl  = Artist.create!(
   Guitar Town. Since then Earle has released 15 other studio albums and received three Grammy awards. His songs have been recorded by
   Johnny Cash, Waylon Jennings, Travis Tritt, Vince Gill, Patty Loveless, Shawn Colvin, Ian Stuart Donaldson and Emmylou Harris.[2] He
   has appeared in film and television, and has written a novel, a play, and a book of short stories.",
-  image_url: "https://en.wikipedia.org/wiki/File:Steve_Earle_at_the_City_Winery_Chicago_2015-02-03_23.07.07_(16414924106).jpg")
+  image_url: "https://cloudinary.com/console/media_library#/dialog/image/upload/Steve_Earle_at_the_City_Winery_Chicago_2015-02-03_23.07.07__16414924106_hceemv")
 
 
 

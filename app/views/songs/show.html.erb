@@ -1,0 +1,13 @@
+<div class="panel panel-primary">
+  <div class="panel-heading"><%= @song.title %></div>
+
+  <div class="panel-body">
+
+    <p>Composer: <%= @song.composer %></p>
+    <p>Album: <%= @song.album %></p>
+
+      </div>
+
+</div>
+
+<%= link_to "Back", songs_path, class: "btn btn-default" %>
