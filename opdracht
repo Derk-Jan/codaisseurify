@@ -41,16 +41,22 @@ Stat 5 rails console
 rails console
 
 
+6 Artists Overview Page
 
+a config/routes =.rb aangepast artists index + show index
+b rails generate controller artists creates =>
+c artists_controller.rb => defined  an index
+d created an  new view index.html.erb
 
  
 
 
+echo 'export CLOUDINARY_URL=cloudinary://484128163567919:mSwACP6YdtpxMaG_zWB40C09ZJ4@dx1oochae´ >> ~/.zshrc
+
+deis config:set CLOUDINARY_URL=cloudinary://484128163567919:mSwACP6YdtpxMaG_zWB40C09ZJ4@dx1oochae
 
 
-
-
-
+rails generate controller songs
 
 
 
